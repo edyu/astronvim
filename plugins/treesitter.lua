@@ -6,6 +6,9 @@ return {
       "comment",
       "lua",
       "zig",
+      "ocaml",
+      "ocaml_interface",
+      "sql",
     })
   end,
 }
