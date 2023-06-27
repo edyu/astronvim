@@ -70,16 +70,21 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     -- Set up custom filetypes
-    -- vim.filetype.add {
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
+    vim.filetype.add {
+      extension = {
+        zon = "zig",
+      },
     --   filename = {
     --     ["Foofile"] = "fooscript",
     --   },
     --   pattern = {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
-    -- }
+    }
+    vim.api.nvim_create_autocmd("FileType", {
+      pattern = { "md", "markdown" },
+      command = "setlocal spell",
+      command = "setlocal wrap",
+    })
   end,
 }
