@@ -12,6 +12,7 @@ return {
       "zig",
       "ocaml",
       "ocaml_interface",
+      "odin",
       "python",
       "sql",
       "tsx",
