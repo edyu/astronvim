@@ -86,5 +86,9 @@ return {
       command = "setlocal spell",
       command = "setlocal wrap",
     })
+    vim.api.nvim_create_autocmd("FileType", {
+      pattern = { "odin", "odin" },
+      command = "setlocal commentstring=//%s",
+    })
   end,
 }
