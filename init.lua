@@ -88,7 +88,7 @@ return {
     })
     vim.api.nvim_create_autocmd("FileType", {
       pattern = { "odin", "odin" },
-      command = "setlocal commentstring=//%s",
+      command = "setlocal commentstring=//%s tabstop=4 shiftwidth=4 noexpandtab",
     })
   end,
 }
